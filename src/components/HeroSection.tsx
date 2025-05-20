@@ -114,7 +114,7 @@ const HeroSection = () => {
                   {/* Profile image */}
                   <div className={`w-full h-full transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}>
                     <img 
-                      src="/public/profile.png" 
+                      src="/profile.png" 
                       alt="Ragul Balajii S S" 
                       className="w-full h-full object-cover"
                       onLoad={() => setImageLoaded(true)}

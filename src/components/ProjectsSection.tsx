@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       technologies: ["React", "Python", "JavaScript", "Move"],
       githubUrl: "https://github.com/Sbragul26/wqi.dev",
       //demoUrl: "#",
-      image: "/public/project.png",
+      image: "/project.png",
     },
     {
       title: "SmartRx",
@@ -19,7 +19,7 @@ const ProjectsSection = () => {
       technologies: ["React", "Python", "Tailwind CSS"],
       githubUrl: "https://github.com/kanishkhaa/smartrx",
       //demoUrl: "#",
-      image: "/public/project2.png",
+      image: "/project2.png",
       reversed: true
     },
     {
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
       technologies: ["React", "Python", "Tailwind CSS"],
       githubUrl: "https://github.com/Sbragul26/SMS-Spam-classifier",
       //demoUrl: "#",
-      image: "/public/project.3.png",
+      image: "/project.3.png",
       reversed: true
     },
   ];
