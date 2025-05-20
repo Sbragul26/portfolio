@@ -6,28 +6,31 @@ import ProjectCard, { ProjectProps } from "./ProjectCard";
 const ProjectsSection = () => {
   const projects: ProjectProps[] = [
     {
-      title: "E-commerce Platform",
-      description: "A full-featured e-commerce platform with product listings, shopping cart, user authentication, and payment processing integration.",
-      technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-      githubUrl: "#",
-      demoUrl: "#",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1789&q=80",
+      title: "TradeGuard - AI-Powered Perpetuals Trading DApp on Aptos",
+      description: "TradeGuard is an AI-powered decentralized trading platform built on the Aptos blockchain. It enables traders to manage risk effectively by automatically adjusting leverage, hedging positions, and preventing liquidation. The platform leverages real-time market data and AI-driven predictions to execute smart trades, minimizing losses and enhancing profitability. \nBuilt with Move smart contracts, TradeGuard ensures fast, secure, and transparent transactions. The platform integrates seamlessly with Martian Wallet, providing users with an effortless trading experience. By automating trading decisions, traders can avoid emotional biases and optimize their strategies in highly volatile markets.",
+      technologies: ["React", "Python", "JavaScript", "Move"],
+      githubUrl: "https://github.com/Sbragul26/wqi.dev",
+      //demoUrl: "#",
+      image: "/public/project.png",
     },
     {
-      title: "Task Management App",
-      description: "A productivity application for managing tasks, projects, and team collaboration with drag-and-drop functionality.",
-      technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
-      githubUrl: "#",
-      demoUrl: "#",
+      title: "SmartRx",
+      description: "SmartRx is an AI-powered health companion that simplifies and secures medication management. It allows users to analyze prescriptions, track medications, receive timely refill and appointment reminders, and access nearby hospitals or pharmacies through map-based directions. The platform ensures user safety by detecting drug interactions, providing personalized health tips, and maintaining a digital history with emergency QR access for critical situations.",
+      technologies: ["React", "Python", "Tailwind CSS"],
+      githubUrl: "https://github.com/kanishkhaa/smartrx",
+      //demoUrl: "#",
+      image: "/public/project2.png",
       reversed: true
     },
     {
-      title: "AI Image Generator",
-      description: "An application that uses machine learning models to generate unique images based on text prompts provided by users.",
-      technologies: ["Python", "TensorFlow", "React", "FastAPI"],
-      githubUrl: "#",
-      demoUrl: "#"
-    }
+      title: "SMS Spam Classifier",
+      description: "I developed an ML-based SMS spam classifier using Python and scikit-learn, leveraging Natural Language Processing (NLP) techniques to preprocess and categorize messages as either spam or ham. The model was trained on a labeled dataset using supervised learning to enhance its accuracy in detecting spam. To make the solution interactive and accessible, I deployed it using Flask, enabling real-time SMS classification through a user-friendly web interface.",
+      technologies: ["React", "Python", "Tailwind CSS"],
+      githubUrl: "https://github.com/Sbragul26/SMS-Spam-classifier",
+      //demoUrl: "#",
+      image: "/public/project.3.png",
+      reversed: true
+    },
   ];
 
   return (

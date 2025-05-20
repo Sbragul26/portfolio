@@ -74,16 +74,14 @@ const ContactSection = () => {
                 <div className="bg-primary text-primary-foreground p-2 rounded-full">
                   <Mail size={18} />
                 </div>
-                <span className="text-foreground group-hover:text-primary transition-colors">
-                  your-email@example.com
-                </span>
+                <span className="text-foreground group-hover:text-primary transition-colors">sbragul26@gmail.com</span>
               </a>
             </div>
             
             <h3 className="text-xl font-bold mb-4 text-primary">Connect With Me</h3>
             <div className="flex gap-4">
               <a 
-                href="#" 
+                href="https://github.com/Sbragul26" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-card p-3 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
@@ -92,22 +90,13 @@ const ContactSection = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/ragulbalajii/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-card p-3 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
-              </a>
-              <a 
-                href="#" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-card p-3 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
               </a>
             </div>
           </div>

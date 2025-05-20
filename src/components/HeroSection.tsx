@@ -15,11 +15,11 @@ const HeroSection = () => {
   ];
 
   const skills = [
-    { name: "JavaScript", color: "bg-amber-500/30 text-amber-300 border-amber-500/50" },
+    { name: "Linux", color: "bg-amber-500/30 text-amber-300 border-amber-500/50" },
     { name: "React", color: "bg-blue-500/30 text-blue-300 border-blue-500/50" },
     { name: "Python", color: "bg-green-500/30 text-green-300 border-green-500/50" },
-    { name: "Node.js", color: "bg-green-600/30 text-green-300 border-green-600/50" },
-    { name: "Tailwind", color: "bg-cyan-500/30 text-cyan-300 border-cyan-500/50" }
+    { name: "C++", color: "bg-cyan-500/30 text-cyan-300 border-cyan-500/50" },
+    {name: "Tailwind", color: "bg-green-600/30 text-green-300 border-green-600/50" }
   ];
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -28,6 +28,7 @@ const HeroSection = () => {
   const [showResumePreview, setShowResumePreview] = useState(false);
   const [activeRoleIndex, setActiveRoleIndex] = useState(0);
   const [showAllRoles, setShowAllRoles] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -109,8 +110,22 @@ const HeroSection = () => {
               
               {/* Main profile circle */}
               <div className="absolute inset-0 rounded-full border-2 border-purple-500/50 overflow-hidden backdrop-blur-sm bg-white/5">
-                <div className="absolute inset-1 rounded-full bg-gradient-to-br from-purple-900/80 to-purple-800/40 flex items-center justify-center">
-                  <span className="text-6xl font-bold text-white/90">RB</span>
+                <div className="absolute inset-1 rounded-full bg-gradient-to-br from-purple-900/80 to-purple-800/40 flex items-center justify-center overflow-hidden">
+                  {/* Profile image */}
+                  <div className={`w-full h-full transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}>
+                    <img 
+                      src="/public/profile.png" 
+                      alt="Ragul Balajii S S" 
+                      className="w-full h-full object-cover"
+                      onLoad={() => setImageLoaded(true)}
+                      onError={() => console.error("Failed to load profile image")}
+                    />
+                  </div>
+                  
+                  {/* Fallback - shown while image loads or if it fails */}
+                  <span className={`absolute text-6xl font-bold text-white/90 transition-opacity duration-300 ${imageLoaded ? 'opacity-0' : 'opacity-100'}`}>
+                    RB
+                  </span>
                 </div>
               </div>
               
@@ -225,15 +240,31 @@ const HeroSection = () => {
 
           {/* Social links */}
           <div className="flex justify-center lg:justify-start gap-6 mb-8">
-            <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 transform hover:scale-110">
+            <a 
+              href="https://github.com/Sbragul26" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-400 hover:text-purple-400 transition-colors duration-300 transform hover:scale-110"
+              aria-label="GitHub Profile"
+            >
               <Github className="h-6 w-6" />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 transform hover:scale-110">
+            <a 
+              href="https://www.linkedin.com/in/ragulbalajii/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-400 hover:text-purple-400 transition-colors duration-300 transform hover:scale-110"
+              aria-label="LinkedIn Profile"
+            >
               <Linkedin className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>
             </a>
-            <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300 transform hover:scale-110">
+            <a 
+              href="mailto:sbragul26@gmail.com" 
+              className="text-gray-400 hover:text-purple-400 transition-colors duration-300 transform hover:scale-110"
+              aria-label="Email Me"
+            >
               <Mail className="h-6 w-6" />
               <span className="sr-only">Email</span>
             </a>

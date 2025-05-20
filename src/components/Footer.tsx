@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="flex space-x-6 mb-6">
             <a 
-              href="#" 
+              href="https://github.com/Sbragul26" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"
@@ -19,7 +19,7 @@ const Footer = () => {
               <Github size={20} />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/ragulbalajii/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"
@@ -28,16 +28,7 @@ const Footer = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="#" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hover:text-primary transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter size={20} />
-            </a>
-            <a 
-              href="mailto:your-email@example.com" 
+              href="mailto:sbragul26@gmail.com" 
               className="hover:text-primary transition-colors"
               aria-label="Email"
             >
@@ -46,7 +37,7 @@ const Footer = () => {
           </div>
           
           <p className="text-muted-foreground text-sm">
-            &copy; {currentYear} Ragul Balajii S S. All rights reserved.
+            &copy; {currentYear} sbragul..All rights reserved.
           </p>
         </div>
       </div>
